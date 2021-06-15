@@ -1,0 +1,38 @@
+<!-- DOCTYPE tells us what kind of document we are trying to access -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/{{pageIcon}}.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="container">
+        {{>header}}
+        <h1>{{title}}</h1>
+        <p>{{message}}</p>
+
+        <form class="weather-form">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control " placeholder="Enter city name as location" id="weather_city_location" />
+            <button class="btn btn-outline-secondary"><i class="bi bi-search"></i></button>
+          </div>
+        </form>
+
+        <p class="text-success" id="location-success"></p>
+        <p class="text-success" id="forecast-success"></p>
+        <p class="text-danger" id="location-error"></p>
+
+        {{>footer}}
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
