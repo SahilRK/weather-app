@@ -9,3 +9,10 @@ img{
 .company-logo span{
     font-size:20px;
 }
+.loader_wrapper{
+    display:none;
+}
+
+.content_wrapper{
+    display: none;
+}

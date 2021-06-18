@@ -26,9 +26,17 @@
           </div>
         </form>
 
-        <p class="text-success" id="location-success"></p>
-        <p class="text-success" id="forecast-success"></p>
-        <p class="text-danger" id="location-error"></p>
+        <div class="loader_wrapper" id="loader_wrapper">
+          <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+        </div>
+        <div class="content_wrapper" id="content_wrapper">
+          <p class="text-success" id="location-success"></p>
+          <p class="text-success" id="forecast-success"></p>
+          <p class="text-danger" id="location-error"></p>
+        </div>
 
         {{>footer}}
     </div>
